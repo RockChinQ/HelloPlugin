@@ -1,14 +1,10 @@
 from pkg.plugin.models import *
 from pkg.plugin.host import EventContext, PluginHost
 
-"""
-在收到私聊或群聊消息"hello"时，回复"hello, <发送者id>!"或"hello, everyone!"
-"""
-
 
 # 注册插件
 @register(name="Hello", description="hello world", version="0.1", author="RockChinQ")
-class HelloPlugin(Plugin):
+class MyPlugin(Plugin):
 
     # 插件加载时触发
     # plugin_host (pkg.plugin.host.PluginHost) 提供了与主程序交互的一些方法，详细请查看其源码
